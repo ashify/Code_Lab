@@ -1,5 +1,5 @@
 # Code_Lab
-Projects and Code Snippets
+Side Projects and Code Snippets
 
 
 ##Python Lab
