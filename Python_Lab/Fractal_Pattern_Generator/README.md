@@ -1,6 +1,7 @@
-# Pattern Generator
+# Simple Fractal Pattern Generator
 
-This is a simple script that has Turtle draw out a fractal style pattern. 
+This is a simple script that has Turtle draw out a fractal style pattern.
+It isn't the tool for drawing mandelbrot fractals, but still fun to mess with.
 You can change some of the variables to create different patterns like these:
 
 TurtlePattern1.py
