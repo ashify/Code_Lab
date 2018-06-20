@@ -53,3 +53,15 @@ class Vector:
 
     def normalize(self):
         return self.scalarMultiply(1/self.getMagnitude())
+
+    def dotProduct(self, v):
+        return sum([x*y for x,y in zip(self.coordinates, v.coordinates)])
+       
+    
+    def dotProductAngle(self, v, inRadians=False):
+        radians = math.acos(self.dotProduct(v) / (self.getMagnitude() * v.getMagnitude()))
+        
+        if(inRadians):
+            return radians
+
+        return math.degrees(radians)

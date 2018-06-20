@@ -24,21 +24,49 @@ from linearalg1 import Vector
 #
 # print(vectorProduct)
 
-myvector = Vector((0.221,7.437))
+# myvector = Vector((0.221,7.437))
 
-print(myvector.getMagnitude())
-
-
-myvector = Vector((8.813,1.331,6.247))
-
-print(myvector.getMagnitude())
+# print(myvector.getMagnitude())
 
 
-myvector = Vector((5.581,-2.136))
+# myvector = Vector((8.813,1.331,6.247))
 
-print(myvector.normalize())
+# print(myvector.getMagnitude())
 
 
-myvector = Vector((1.996,3.108,-4.554))
+# myvector = Vector((5.581,-2.136))
 
-print(myvector.normalize())
+# print(myvector.normalize())
+
+
+# myvector = Vector((1.996,3.108,-4.554))
+
+# print(myvector.normalize())
+
+
+myvector = Vector((7.887,4.138))
+
+myvector2 = Vector((-8.802,6.776))
+
+print(myvector.dotProduct(myvector2))
+
+
+myvector = Vector((-5.955,-4.904,-1.874))
+
+myvector2 = Vector((-4.496,-8.755,7.103))
+
+print(myvector.dotProduct(myvector2))
+
+
+myvector = Vector((3.183,-7.627))
+
+myvector2 = Vector((-2.668,5.319))
+
+print(myvector.dotProductAngle(myvector2, True))
+
+
+myvector = Vector((7.35,0.221,5.188))
+
+myvector2 = Vector((2.751,8.259,3.985))
+
+print(myvector.dotProductAngle(myvector2))
