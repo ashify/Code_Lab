@@ -44,29 +44,36 @@ from linearalg1 import Vector
 # print(myvector.normalize())
 
 
-myvector = Vector((7.887,4.138))
+# myvector = Vector((7.887,4.138))
 
-myvector2 = Vector((-8.802,6.776))
+# myvector2 = Vector((-8.802,6.776))
 
-print(myvector.dotProduct(myvector2))
-
-
-myvector = Vector((-5.955,-4.904,-1.874))
-
-myvector2 = Vector((-4.496,-8.755,7.103))
-
-print(myvector.dotProduct(myvector2))
+# print(myvector.dotProduct(myvector2))
 
 
-myvector = Vector((3.183,-7.627))
+# myvector = Vector((-5.955,-4.904,-1.874))
 
-myvector2 = Vector((-2.668,5.319))
+# myvector2 = Vector((-4.496,-8.755,7.103))
 
-print(myvector.dotProductAngle(myvector2, True))
+# print(myvector.dotProduct(myvector2))
 
 
-myvector = Vector((7.35,0.221,5.188))
+# myvector = Vector((3.183,-7.627))
 
-myvector2 = Vector((2.751,8.259,3.985))
+# myvector2 = Vector((-2.668,5.319))
 
-print(myvector.dotProductAngle(myvector2))
+# print(myvector.dotProductAngle(myvector2, True))
+
+
+# myvector = Vector((7.35,0.221,5.188))
+
+# myvector2 = Vector((2.751,8.259,3.985))
+
+# print(myvector.dotProductAngle(myvector2))
+
+
+myvector = Vector((2,4,6))
+
+myvector2 = Vector((1,2,3))
+
+print(myvector.isParallelTo(myvector2))

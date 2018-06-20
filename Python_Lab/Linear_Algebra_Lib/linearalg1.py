@@ -65,3 +65,7 @@ class Vector:
             return radians
 
         return math.degrees(radians)
+
+    def isParallelTo(self, v):
+        products = [x/y for x,y in zip(self.coordinates, v.coordinates)]
+        return len(set(products))==1
