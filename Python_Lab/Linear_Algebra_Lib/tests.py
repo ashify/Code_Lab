@@ -72,8 +72,33 @@ from linearalg1 import Vector
 # print(myvector.dotProductAngle(myvector2))
 
 
-myvector = Vector((2,4,6))
+myvector = Vector((-7.579,-7.88))
 
-myvector2 = Vector((1,2,3))
+myvector2 = Vector((22.737,23.64))
 
 print(myvector.isParallelTo(myvector2))
+print(myvector.isOrthogonalTo(myvector2) , end='\n\n')
+
+
+myvector = Vector((-2.029,9.97,4.172))
+
+myvector2 = Vector((-9.231,-6.639,-7.245))
+
+print(myvector.isParallelTo(myvector2))
+print(myvector.isOrthogonalTo(myvector2) , end='\n\n')
+
+
+myvector = Vector((-2.328,-7.284,-1.214))
+
+myvector2 = Vector((-1.821,1.072,-2.94))
+
+print(myvector.isParallelTo(myvector2))
+print(myvector.isOrthogonalTo(myvector2) , end='\n\n')
+
+
+myvector = Vector((2.118,4.827))
+
+myvector2 = Vector((0,0))
+
+print(myvector.isParallelTo(myvector2))
+print(myvector.isOrthogonalTo(myvector2) , end='\n\n')

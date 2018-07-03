@@ -1,10 +1,11 @@
 import math
 
+
 class Vector:
 
     def __init__(self, coordinates):
         self.coordinates = tuple(coordinates)
-        self.dimensions  = len(coordinates)
+        self.dimensions  = len(self.coordinates)
 
     def __str__(self):
         return 'Vector: {}'.format(self.coordinates)
@@ -52,20 +53,35 @@ class Vector:
 
 
     def normalize(self):
-        return self.scalarMultiply(1/self.getMagnitude())
+        try:
+            return self.scalarMultiply(1/self.getMagnitude())
+
+        except ZeroDivisionError:
+            raise Exception('Cannot normalize zero vector')
+
 
     def dotProduct(self, v):
         return sum([x*y for x,y in zip(self.coordinates, v.coordinates)])
        
     
     def dotProductAngle(self, v, inRadians=False):
-        radians = math.acos(self.dotProduct(v) / (self.getMagnitude() * v.getMagnitude()))
+        normalized1 = self.normalize()
+        normalized2 = v.normalize()
+        radians = math.acos(normalized1.dotProduct(normalized2))
         
         if(inRadians):
             return radians
 
         return math.degrees(radians)
 
+
+    def isZeroVector(self):
+        return self.getMagnitude() < 1e-10 
+       
+
     def isParallelTo(self, v):
-        products = [x/y for x,y in zip(self.coordinates, v.coordinates)]
-        return len(set(products))==1
+        return self.isZeroVector() or v.isZeroVector() or self.dotProductAngle(v,True) == 0 or self.dotProductAngle(v,True) == math.pi
+
+
+    def isOrthogonalTo(self, v):
+        return abs(self.dotProduct(v)) < 1e-10
