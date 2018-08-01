@@ -218,3 +218,28 @@ end
 
 fprintf('Program paused. Press enter to continue.\n');
 pause;
+
+%% =========== Part 9: Learning Curve for Polynomial Regression with test set =============
+%  compute cost for untouched test set 
+%
+
+lambda = 3;
+
+[error_train, error_test] = ...
+    learningCurve(X_poly, y, X_poly_test, ytest, lambda);
+plot(1:m, error_train, 1:m, error_test);
+
+title(sprintf('Polynomial Regression Learning Curve (lambda = %f)', lambda));
+xlabel('Number of training examples')
+ylabel('Error')
+axis([0 13 0 100])
+legend('Train', 'Test')
+
+fprintf('Polynomial Regression (lambda = %f)\n\n', lambda);
+fprintf('# Training Examples\tTrain Error\tTest Error\n');
+for i = 1:m
+    fprintf('  \t%d\t\t%f\t%f\n', i, error_train(i), error_test(i));
+end
+
+fprintf('Program paused. Press enter to continue.\n');
+pause;
