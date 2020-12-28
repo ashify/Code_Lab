@@ -1,0 +1,189 @@
+{
+  "contractName": "SimpleStorage",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a7230582073a3edffdeff3dd151fe1eeeae6b765603532ac68f8c9172599658020c927ee20029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a7230582073a3edffdeff3dd151fe1eeeae6b765603532ac68f8c9172599658020c927ee20029",
+  "sourceMap": "26:55:1:-;;;53:26;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:26:1;26:55;;;;;;",
+  "deployedSourceMap": "26:55:1:-;;;;;",
+  "source": "pragma solidity ^0.5.0;\n\n\ncontract SimpleStorage {\n  constructor() public {\n  }\n}\n",
+  "sourcePath": "C:/Users/Ashman/development/code_lab/Blockchain/rsk/simple-storage/contracts/SimpleStorage.sol",
+  "ast": {
+    "absolutePath": "/C/Users/Ashman/development/code_lab/Blockchain/rsk/simple-storage/contracts/SimpleStorage.sol",
+    "exportedSymbols": {
+      "SimpleStorage": [
+        63
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "SimpleStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "74:5:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 62,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "64:2:1"
+            },
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "74:0:1"
+            },
+            "scope": 63,
+            "src": "53:26:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 64,
+        "src": "26:55:1"
+      }
+    ],
+    "src": "0:82:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/Ashman/development/code_lab/Blockchain/rsk/simple-storage/contracts/SimpleStorage.sol",
+    "exportedSymbols": {
+      "SimpleStorage": [
+        63
+      ]
+    },
+    "id": 64,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 58,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 63,
+        "linearizedBaseContracts": [
+          63
+        ],
+        "name": "SimpleStorage",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 61,
+              "nodeType": "Block",
+              "src": "74:5:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 62,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 59,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "64:2:1"
+            },
+            "returnParameters": {
+              "id": 60,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "74:0:1"
+            },
+            "scope": 63,
+            "src": "53:26:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 64,
+        "src": "26:55:1"
+      }
+    ],
+    "src": "0:82:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {
+    "31": {
+      "events": {},
+      "links": {},
+      "address": "0xf545602435E2FAA5e55F6A5f28E85F68A1fc0888",
+      "transactionHash": "0x6defc89adb48edc48e0557abb242f9157a3a106cf932380fcbefda7bc91ac5ce"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xfdDB8f6de1De7fB3998d670d2d6E0168adA56605",
+      "transactionHash": "0xe5b87cf4b4d8b9347b9cdfc91b5a72f5600e2d555c0ef55613ad58758a1ebf11"
+    }
+  },
+  "schemaVersion": "3.0.5",
+  "updatedAt": "2019-03-24T03:14:14.797Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
